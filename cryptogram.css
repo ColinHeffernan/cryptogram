@@ -1,0 +1,106 @@
+
+h1
+{
+    color: green;
+}
+
+#messageInput{
+    border-radius: 5px;
+    border: 2px solid purple;
+    background-color: #ffcc33;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#freeLetterDisplay{ /* div element displaying all available letters for substitution*/
+    width: 85%;
+    background-color: #aabbaa;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+#messageDisplay{ /* div element that displays every letterDisplayTable involved in the messaage*/
+    width: 85%;
+    background-color: #4499aa;
+    text-align: left;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#frequencyDisplay{
+    width: 85%;
+}
+
+.wordDisplay{
+    display: inline-block;
+}
+
+.letterHolder{ /* div elements that contain the crypted and substituted letters */
+    width: 50px;
+    height: 50px;
+}
+.letter{ /* div elements containing the entire letter object with both original and substitution*/
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+}
+
+.cryptedCharacter{ /* div element for the crypted letters in the message display */
+    text-align: center;
+    color: white;
+    font-family:"Times New Roman",Times,serif;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+}
+
+letterHolder{ /* div elements that hold the letters */
+    width: 50px;
+    height 50px;
+}
+.decryptedCharacter{ /* div elements for the free letters that can be dragged about the message and free letters table*/
+    text-align: center;
+    font-family:"Times New Roman",Times,serif;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 0px;
+    color: white;
+    border-radius: 15px;
+    background-color: green;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+.highlightedLetter{ /* div element that is currently selected by the mouse*/
+    text-align: center;
+    font-family:"Times New Roman",Times,serif;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    border-radius: 15px;
+    background-color: yellow;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.letterFrequency{
+    display: inline-block;
+    background-color: red;
+    border: 1px solid blue;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    line-height: 25 px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+button { /* styling for begin and reset buttons */
+    border-radius: 8px;
+    border: 2px green solid;
+}
+
+
+    
