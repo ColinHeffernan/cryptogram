@@ -1,13 +1,30 @@
-cryptogram
-==========
+NAME
+	Cryptogram Helper
 
-Source code for an interactive web application used to solve cryptogram puzzles.
+VERSION
+	1.0
 
-Enter the crypted message and click begin to start solving the puzzle. 
-Substitute letters by dragging from box of free letters to the green box above the letter to be substituted in the message display.
-Alternatively, moving the cursor over the green box above a letter and typing the desired substitution has the same effect.
+DESCRIPTION
+	This application allows you to interactively solve a cryptogram puzzle by substituting letters into a message.
 
-To clear the entire puzzle, click reset.
-Individual substitutions can be cleared by hovering over the green letter box and typing a non-alphabetic character or by dragging the letter out of the green box.
+INSTRUCTIONS
+	See the demo video in my repository for more details. 
+	I usually get my puzzles from the Cecil Whig's website: http://www.cecildaily.com/diversions/cryptoquip/
+	
+	Enter the crypted message and click begin to start solving the puzzle. 
+	
+	Substitute letters by dragging a letter from the grey box of free letters above to the green box above the letter for which you wish to substitute it in the blue message display.
+	Alternatively, moving the cursor over the green box above a letter and typing the desired substitution has the same effect.
+	
+	Individual substitutions can be cleared by dragging the substituted letter out of its green box
+	Alternatively 
+	
+	To reset the substitutions at any time, click the reset button under the orange message input box.
+	Any typos can be fixed on the fly by simply editing the crypted message in the orange box.
 
-The red boxes below the message display give the user information about the frequency of each character in the message.
+	The red boxes below the message display give the user information about the frequency of each character in the message.
+
+SPECIAL CONSIDERATIONS
+	This is my first program written in javascript, so there may be some issues running it across different browsers.
+	 I have had the most success running the site on Chrome but am working on improving the accommodation for different browsers and versions.
+	 

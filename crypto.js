@@ -1,15 +1,25 @@
-var dictionary = null;
-var reverseDict = null;
-var freeLetters = null;
-var cryptedMessage = null;
-var frequencyTable = null;
+/* crypto.js - controls main logic flow and functinality for the cryptogram helper
+ * 
+ * Author: Colin Heffernan
+ * Created: Dec 14 2013
+ *
+ */
 
-// function to be called when begin button is pressed
+/* Global variables to be used by all components */
+var dictionary = null; // maps each letter to its substitution
+var reverseDict = null; // maps each substitution to the original letter
+var freeLetters = null; // letters remaining and available for substitution
+var cryptedMessage = null; // original message input by user to the message box
+var frequencyTable = null; // table of letter frequencies in the original message
+var ALPHABET = null; // array containing the 26 letters in the english alphabet for resetting
+/*
+ * initialize - called when the begin button is pressed
+ */
 function initialize(){
     dictionary = new Array();
     reverseDict = new Array();
     frequencyTable = new Array();
-    ALPHABET = new Array();
+    ALPHABET = new Array(); // constant alphabet array 
     addResetButton();
     var A = "A".charCodeAt(0);
     for (var i = 0; i < 26; i++){ // fill alphabet array
@@ -37,7 +47,7 @@ function updateEssentials(){
     coreLogic.appendChild(newFrequencyDisplay());
 }
 
-// returns the message as an array of word for displaying the message and controlling text wrapping
+// returns the message as an array of words for displaying the message and controlling text wrapping
 function getCryptedMessage(){
     var messageInput = document.getElementById("messageInput");
     var crypt = new Array(); // array of strings each representing a word
@@ -369,7 +379,10 @@ function getElementByAttributeValue(attribute, value)
     return matches;
 }
 
-// determines whether or not a character is A-Z
+/*
+ * isLetter - determines whether a letter is between A and Z 
+ * Note that every letter passed as an argument will be changed to uppercase
+ */
 function isLetter(letter){
     return (letter.charCodeAt(0) <= 90 && letter.charCodeAt(0) >= 65);
 }

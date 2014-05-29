@@ -1,9 +1,16 @@
-
+/*
+ * cryptogram.css - contains styling information for the different components of the cryptogram helper
+ *
+ * Primary Author: Colin Heffernan
+ * Created: Dec 4 2013
+ *
+*/
 h1
 {
     color: green;
 }
 
+/* Box where user types the original, crypted message */
 #messageInput{
     border-radius: 5px;
     border: 2px solid purple;
@@ -11,39 +18,49 @@ h1
     font-size: 18px;
     text-transform: uppercase;
 }
-#freeLetterDisplay{ /* div element displaying all available letters for substitution*/
+
+/* Box displaying which letters are available for substitution */
+#freeLetterDisplay{
     width: 85%;
     background-color: #aabbaa;
     border: 3px solid black;
     border-radius: 15px;
 }
 
-#messageDisplay{ /* div element that displays every letterDisplayTable involved in the messaage*/
+/* Main element displaying both the original message and its updated substituted equivalent */
+#messageDisplay{
     width: 85%;
     background-color: #4499aa;
     text-align: left;
     border: 3px solid black;
     border-radius: 15px;
 }
+
+/* Table to display the frequency of each letter in the table under the message display */
 #frequencyDisplay{
     width: 85%;
 }
 
+/* Words are displayed individually in their own wordDisplay elements in the messageDisplay */
 .wordDisplay{
     display: inline-block;
 }
 
-.letterHolder{ /* div elements that contain the crypted and substituted letters */
+/* Element to hold both the original letter and its substitution above it */
+.letterHolder{
     width: 50px;
     height: 50px;
 }
-.letter{ /* div elements containing the entire letter object with both original and substitution*/
+
+/* div elements containing the entire letter object with both original and substitution*/
+.letter{
     display: inline-block;
     width: 50px;
     height: 100px;
 }
 
-.cryptedCharacter{ /* div element for the crypted letters in the message display */
+/* div element for the crypted letters in the message display */
+.cryptedCharacter{
     text-align: center;
     color: white;
     font-family:"Times New Roman",Times,serif;
@@ -52,11 +69,8 @@ h1
     height: 40px;
 }
 
-letterHolder{ /* div elements that hold the letters */
-    width: 50px;
-    height 50px;
-}
-.decryptedCharacter{ /* div elements for the free letters that can be dragged about the message and free letters table*/
+/* div elements for the free letters that can be dragged about the message and free letters table */
+.decryptedCharacter{ 
     text-align: center;
     font-family:"Times New Roman",Times,serif;
     width: 40px;
@@ -71,7 +85,8 @@ letterHolder{ /* div elements that hold the letters */
     display: inline-block;
 }
 
-.highlightedLetter{ /* div element that is currently selected by the mouse*/
+/* div element for the letter in the message that is currently selected by the mouse */
+.highlightedLetter{ 
     text-align: center;
     font-family:"Times New Roman",Times,serif;
     width: 40px;
@@ -85,6 +100,7 @@ letterHolder{ /* div elements that hold the letters */
     display: inline-block;
 }
 
+/* Individual cell in the frequencyDisplay to display a letter and its frequency in the message */
 .letterFrequency{
     display: inline-block;
     background-color: red;
@@ -97,7 +113,8 @@ letterHolder{ /* div elements that hold the letters */
     margin: 5px;
 }
 
-button { /* styling for begin and reset buttons */
+/* styling for begin and reset buttons */
+button {
     border-radius: 8px;
     border: 2px green solid;
 }
