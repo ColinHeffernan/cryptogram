@@ -1,14 +1,10 @@
-NAME
-====
+### NAME
 	Cryptogram Helper
-VERSION
-=======
+### VERSION
 	1.0
-DESCRIPTION
-===========
+### DESCRIPTION
 	This application allows you to interactively solve a cryptogram puzzle by substituting letters into a message.
-INSTRUCTIONS
-============
+### INSTRUCTIONS
 	I usually get my puzzles from the Cecil Whig's website: http://www.cecildaily.com/diversions/cryptoquip/
 
 	Enter the crypted message in the yellow message box and click begin to start solving the puzzle.
@@ -23,7 +19,6 @@ INSTRUCTIONS
 
 	The red boxes below the message display information about the frequency of each character in the message.
 
-SPECIAL CONSIDERATIONS
-======================
+### SPECIAL CONSIDERATIONS
 	This is my first program written in javascript, so there may be some issues running it across different browsers.
 	I have had the most success running the site on Chrome but am working on improving the accommodation for different browsers and versions.
